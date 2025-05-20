@@ -12,19 +12,19 @@ diode_volt_drop = 0 if ideal_diodes else 0.7
 
 # Capacitor
 has_capacitor = True
-capacitance = 1000e-7 # farads
+capacitance = 1000e-6 # farads
 #phase = np.pi / 2 # 90 degrees, TODO: change to calculate based on resistance
 
 # Zener diode
 has_zener = True
-zener_voltage = 7
+zener_voltage = 5
 
 # Resistor
-resistance = 800 # ohm
+resistance = 1000 # ohm
 
 # Source
-frequency = 60 # hertz
-voltage = 15 # volts
+frequency = 20 # hertz
+voltage = 12 # volts
 current_volt = lambda t: np.sin(2*np.pi*t*frequency) * voltage # function given time in seconds
 
 # Rectifiers
